@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>�̹����±� �ǽ�</title>
+<meta charset="utf-8">
+<title>이미지태그 실습</title>
+<style>
+a{
+	text-decoration: none;
+	color:inherit; /* initial; */
+}
+</style>
 </head>
 <body>
-<h2>�̹����±�</h2>
-<p>img�±� : �̹����±�<br>
-�������� �̹���ǥ��, ������ �̹���ǥ��
+<h2>링크</h2>
+<p>
+a 태그 : 링크는 현재 웹 페이지에서 다른 페이지로 연결하기 위한 형태<br>
+a 태그로 링크를 적용한다<br>
+현재 페이지에서 특정위치로 연결할 수도 있는데 이런 형태를 앵커(anchor)라고 한다
 </p>
-<img src='../ima/ima.jpg'>
+
+<h2 id="no1">이미지태그</h2>
+<p>img태그 : 이미지태그<br>
+폴더내의 이미지표현, 웹상의 이미지표현
+</p>
+<p>
+링크할 페이지를 창에서 연결하려면 target 속성값을 _blank 로 지정
+지정하지 않으면 기본 _self 이다
+</p>
+<!-- 현재 페이지가 동일한 폴더에 있는 이미지파일을 찾아가는 경우
+. : 현재위치, ..: 상위폴더로 나간 위치
+alt : 이미지 파일이 정상 로딩이 되지 않는 경우 이미지에 대한 설명을 넣는 속성
+title : 마우스를 갖다 대었을때 보여지는 설명을 말풍선으로 넣는 속성
+ -->
+ <p><a target="_blank" href="http://naver.com">네이버에 연결</a></p>
+ <h2><a id="no2" target="_self" href="#no1">폴더내에 있는 이미지</a></h2>
+<img src='./image/images.jpg' title="이미지" alt="평화이미지" width="200px" heigt="300px">
+<img src='./image/images1.jpg' alt="평화이미지" width="200px" heigt="300px">
+<hr>
+<img src='../ima/ima.jpg' width="200px" heigt="300px">
+<hr>
+<h2><a href="#no2">웹상에 이미지</a></h2>
+<!--웹상에 이미지 주소 복사-->
+<img src='https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAyMTRfMjQ2%2FMDAxNjQ0ODM2MjkzODI3.hPTaw3cqn3QxRVqqbhLo4gK-uppT6R0G2ycnkb6ADAAg.FOkfNCchsGNGSDgi7ELVV86cpa0_0xPmfky3JkbKDa0g.JPEG.ky9099%2F6d9cfb1ea45c474884bcab5f6bce0942.jpg&type=a340' width="200px" heigt="300px">
+<p><a href=#>맨 위로</a></p>
 </body>
 </html>

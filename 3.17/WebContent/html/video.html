@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>비디오파일 실습</title>
+</head>
+<body>
+<h2>비디오 파일</h2>
+<video width="400px height="300px" controls
+poster="./vide.jpg"
+ src="../ima/video/video1.mp4" autoplay muted ></video>
+ <video width="400px height="300px" controls
+  poster="./vide.jpg"
+  src="../ima/video/video.mp4"  autoplay muted >
+  <track kind="subtitles"src="../ima/video/asdasd.vtt" srclang="ko" default>
+  </video>
+  <!--poster: 실제 비디오파일이 존재하지 않는다면 대체해서 보여질 이미지를 지정하는 속성
+  autoplay: 화면에 들어가자 마자 실행되어지는 형태 autopaly를 권장하지 않기 때문에 자동실행 하려면 muted 속성과 함께 지정해야함 -->
+</body>
+</html>
