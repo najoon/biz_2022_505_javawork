@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<style>
+	table {border-color: black;
+			border : 1px solid;
+			border-collapse:collapse;
+	}
+	tr, td, th {
+			border-color: black;
+			border : 1px solid;
+			padding: 5px 10px;
+	}
+	#ema{
+		border : 2px solid;
+	}
+	#num{
+		border : 2px solid;
+	}
+</style>
+</head>
+<body>
+	<h1>회원가입정보</h1>
+<form action='' autocomplete="off" method='post'>
+	<table>
+	<tr>
+		<th>
+			아이디
+		</th>
+		<td>
+			<input type="txet" name="id">
+		</td>
+	</tr>
+	<tr>
+		<th>
+			비밀번호
+		</th>
+		<td>
+		<input type="password" name="password">
+		</td>
+	</tr>
+	<tr>
+		<th>
+			비밀번호확인
+		</th>
+		<td>
+		<input type="password" name="password1">
+		</td>
+	<tr>
+		<th>
+			이름
+		</th>
+		<td>
+		<input type="txet" name="password1">
+		</td>
+	</tr>
+	<tr>
+		<th>
+			성별
+		</th>
+		<td>
+			<label><input type="radio" name="gender" value="남" checked>남</label> 
+			<label><input type="radio" name="gender" value="여">여</label> 
+		</td>
+	</tr>
+	<tr>
+		<th>
+			전화번호
+		</th>
+		<td>
+		<select id="num" name="number">
+			<option value="c01">02</option>
+			<option value="c02">010</option>
+			<option value="c03">031</option>
+			<option value="c04">062</option>
+		</select>
+		<input type="text" name="coll"></input>
+		<input type="text" name="coll"></input>
+		</td>
+	</tr>
+	<tr>
+		<th>
+		sms수신여부
+		</th>
+		<td>
+			<label><input type="checkbox" name="sms">수신함</label>
+		</td>
+	</tr>
+	<tr>
+		<th>
+		이메일
+		</th>
+		<td>
+			<input type="txet" name="email">@
+				<select id="ema" name="email">
+					<option>직접입력</option>
+					<option>naver.com</option>
+					<option>najoon.com</option>
+					<option>joon.com</option>
+					<option>joonhee.com</option>
+				</select>
+		</td>
+	</tr>
+	<tr>
+		<th>
+		사진등록
+		</th>
+		<td>
+			<input type="file" name="files" value="파일선택">
+		</td>
+	</tr>
+	<tr>
+		<th colspan="2">
+				<input type='submit' value='회원가입'>
+		</th>
+	</tr>
+	</table>
+</form>
+</body>
+</html>
