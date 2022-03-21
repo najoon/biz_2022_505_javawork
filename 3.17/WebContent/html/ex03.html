@@ -13,7 +13,7 @@
 			}
 		table tr, table td, table th {
 		border :1px solid #3ad657;
-		padding: 5px;
+		padding: 10px 15px;
 			}
 		table th{
 		background-color: yellow;
@@ -23,23 +23,27 @@
 <body>
 	<h1>현재 페이지 구성</h1>
 	<p>
-		<a href="#img1">이미지 화면</a><br>
-		<a href="#video1">비디오 화면</a><br>
-		<a href="#fable1">식단표</a>
+		<ul>
+		<li><a href="#fable1">식단표</a></li>
+		<li><a href="#img1">이미지 화면</a></li>
+		<li><a href="#video1">비디오 화면</a></li>
+		</ul>
+		<hr>
 		</p>
 		<h1>화면연결하기</h1>
 	<p>
-		<a href="./image/images.jpg" target=_blank>이미지 화면</a><br>
-		<a href="../ima/video/video.mp4" target="_blank">비디오 화면<br>
-		<a href="./table.html" target="_blank">식단표</a>
+	<ul>
+		<li><a href="./table.html" target="_blank">식단표</a></li>
+		<li><a href="./image/images.jpg" target=_blank>이미지 화면</a></li>
+		<li><a href="../ima/video/video.mp4" target="_blank">비디오 화면</a></li>
+		</ul>
 	</p>
-		<img id="img1" src="./image/images.jpg"><br>
-		<video id="video1" src="../ima/video/video.mp4" autoplay muted></video>
-		
+	<hr>
 	<table id="fable1">
 			<h2><caption>식단표</caption></h2>
 		<thaed>
 		<tr>
+			<th>시간/요일</th>
 			<th>월요일</th>
 			<th>화요일</th>
 			<th>수요일</th>
@@ -49,6 +53,7 @@
 		</thaed>
 		<tbody>
 		<tr>
+			<th>아침</th>
 			<td>돈까스</td>
 			<td>육계장</td>
 			<td>코다리조림</td>
@@ -56,20 +61,27 @@
 			<td>오리훈제</td>
 		</tr>
 		<tr>
+			<th>점심</th>
 			<td>소고기무국</td>
 			<td>멸치볶음</td>
 			<td>닭가슴살</td>
 			<td>배추김치</td>
 		</tr>
 		<tr>
+			<th>저녁</th>
 			<td>샐러드</td>
 			<td>된장국</td>
-			<td>계란찜</td>
-			<td>갈비찜</td>
+			<td colspan=2>계란찜</td>
 			<td>어묵국</td>
 		</tr>
 		</tbody>
 	</table>
-	
+	<br>
+	<div>
+		<img id="img1" src="./image/images.jpg">
+	</div>
+	<div>
+		<video id="video1" src="../ima/video/video.mp4" controls="controls"></video>
+	</div>
 </body>
 </html>
