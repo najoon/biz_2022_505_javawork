@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/ex04css.css">
+</head>
+<body>
+<h2>제목표시</h2>
+<!-- 웹브라우저로 웹어플리케이션을 실행할때 주소창에 입력할 url은
+localhost:8080/web0332
+127.0.0.1:8080/web0322
+ -->
+ <a href="./ex04.html">추가 input 실습</a>
+ <a href="./style/index.html">스타일 실습</a>
+ <a href="./style/sel.html">스타일 실습</a>
+ <>
+ <table>
+<tr>
+	<th>
+		 number 태그
+	</th>
+	<td>
+ 		숫자만 입력할 수 있는 태그
+ 	</td>
+</tr>
+<tr>
+	<th>
+		date 태그
+	</th>
+	<td>
+		날짜를 선택할 수 있는 달력 태그
+	</td>
+</tr>
+<tr>
+	<th>
+		month 태그
+	</th>
+	<td>
+		월을 선택할 수 있는 달력 태그
+	</td>
+</tr>
+<tr>
+	<th>
+		time 태그
+	</th>
+	<td>
+		시각을 선택할수 있는 시계 태그
+	</td>
+</tr>
+<tr>
+	<th>
+		button 태그
+	</th>
+	<td>
+		아무런 기능이 없는 버튼형태의 태그
+	</td>
+</tr>
+</table>
+<hr>
+<!-- 
+명명() : 함수
+명명된 함수를 호출한다
+window.open( url)
+window.open( url, 창이름, 창속성)
+창이름: 창이름, target의 형태를 지정할 수 있다.
+창이름에 _self,
+_blank,를 지정하면 target이 적용되고 다른 형태의 이름을 지정하면 target은 _blank가 적용된다
+ -->
+ <input type='button' onclick="window.open('http://google.com', 'google')" value="새창으로 구글열기"><br>
+ <input type='button' onclick="window.open('http://hrd.go.kr', 'google')" value="새창으로 hrd열기"><br>
+	<input type='button' onclick="window.open('./form1.html', 'google', 'width=500')" value="팝업열기"><br>
+	<input type='button' onclick="alert('네이버 열기')" value="알림메시지 띄우기"><br>
+	<input type='button' onclick="window.open('http://naver.com', '_self')" value="새창으로 네이버열기"><br>
+	<input type="button" onclick="window.open('./from1.html')" value="회원가입화면 열기"><br>
+	<input type="time" value="16:24"><br>
+	<input type="month" value="2022-03"><br>
+	<input type="date" value="2022-03-22"><br>
+	<input type='number' min="0" max="10" value="0" step="2">
+
+</body>
+</html>
