@@ -26,7 +26,6 @@ public class HelloKorea {
 		System.out.println(40 / 2);
 		
 		System.out.println("30 + 40 = " + (30+40));
-		
 		System.out.println("30+40="+"70");
 		// 문자열 덧셈 연산
 		// 문자열 + 문자열은 문자열을 연결하여 결과를 만든다
