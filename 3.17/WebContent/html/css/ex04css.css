@@ -1,5 +1,6 @@
 @charset "utf-8";
 table {border-collapse:collapse; margin: 0 auto;}
 th, td {border:1px solid #222; padding: 5px 10px;}
-body {text-align:center;}
+body {text-align:center; margin: 0 auto;}
 .home {font-size: 30px}
+ul {list-style-type:none; padding : 0}
