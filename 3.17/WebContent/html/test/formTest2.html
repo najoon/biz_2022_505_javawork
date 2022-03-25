@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+@font-face {
+    font-family: 'Headline R';
+    src: url('HeadlineR-HM.woff2') format('woff2'),
+        url('./css/font/HeadlineR-HM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+ul {
+	list-style: none;
+	padding-left: 20px;
+}
+
+body > div {
+	border: 2px solid;
+	width: 30%;
+/* 	background-color: rgba(82, 12, 120, 0.5); */
+background-color: blue;
+opacity: 0.5; /* 색 투명도지정 */
+}
+
+.name1 {
+	font-weight: bold
+}
+
+.wid {
+	padding: 0 0 0 40px;
+}
+
+input {
+	margin: 0 0 0 6px;
+}
+</style>
+</head>
+<body>
+	<div>
+		<p>
+		<h1>프런트엔드 개발자 지원서</h1>
+		<p>
+		<H4>HTML,CSS,자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</H4>
+		<hr>
+		<form action=''>
+			<ul>
+				<li class="name1">개인 정보</li>
+				<br>
+				<li><span class="wid">이름</span><input type="text"
+					placeholder="공백 없이 입력하세요." name="id"></li>
+				<li><span class="wid">연락처</span> <input type="tel" name="phone"></li>
+				<br>
+				<li class="name1">지원 분야</li>
+				<br>
+				<li><span class="wid"><input type="radio" name="ck"
+						id="pub"><label for="pub">웹 퍼블리싱</span></label></li>
+				<li><span class="wid"><input type="radio" name="ck"
+						id="ap"><label for="ap">웹 어플리케이션 개발</span></label></li>
+				<li><span class="wid"><input type="radio" name="ck"
+						id="pr"><label for="pr">개발 환경 개선</span></label></li>
+				<br>
+				<li class="name1">지원 동기</li>
+				<br>
+				<textarea rows='5' cols='60' placeholder="본사 지원 동기를 간략히 써 주세요."
+					name="text"></textarea>
+				<li><input type="submit" value="접수하기"><input
+					type="reset" value="다시쓰기"></li>
+			</ul>
+
+		</form>
+	</div>
+</body>
+</html>

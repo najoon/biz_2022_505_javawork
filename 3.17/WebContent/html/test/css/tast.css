@@ -1,0 +1,24 @@
+@charset "EUC-KR";
+
+div {
+	background-color: black;
+	color: white;
+	width: 110px;
+	height: 40px;
+}
+
+p {
+	color: blue;
+}
+
+#text1 {
+	color:black;
+}
+
+#css2 {
+	width: 160px;
+	height: 40px;
+	background-color: blue;
+	color: white;
+}
+span {color:red;}

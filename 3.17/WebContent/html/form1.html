@@ -4,127 +4,107 @@
 <meta charset="utf-8">
 <title>Insert title here</title>
 <style>
-	table {border-color: black;
-			border : 1px solid;
-			border-collapse:collapse;
-	}
-	tr, td, th {
-			border-color: black;
-			border : 1px solid;
-			padding: 5px 10px;
-	}
-	#ema{
-		border : 2px solid;
-	}
-	#num{
-		border : 2px solid;
-	}
-	input[name=number] {width: 60px}
+table {
+	border-color: black;
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+tr, td, th {
+	border-color: black;
+	border: 1px solid;
+	padding: 5px 10px;
+}
+
+#ema {
+	border: 2px solid;
+}
+
+#num {
+	border: 2px solid;
+}
+
+input[name=number] {
+	width: 60px
+}
 </style>
 </head>
 <body>
-<input type="button" value="닫기" onclick="window.close()">
-<!-- 입력항목의 값(데이터)을 전송하려면  form태그에 선언한다
+	<input type="button" value="닫기" onclick="window.close()">
+	<!-- 입력항목의 값(데이터)을 전송하려면  form태그에 선언한다
 각 입력항목은 name속성을 가져야 한다
 : 입력항목의 데이터가 name속성의 파라미터명으로 전송되므로
  -->
-<form action='' autocomplete="off" method='post'>
-	<table>
-	<caption>
-			<h1>회원가입정보</h1>
-	</caption>
-	<tr>
-		<th>
-			아이디
-		</th>
-		<td>
-			<input type="text" name="id" placeholder="ID">
-		</td>
-	</tr>
-	<tr>
-		<th>
-			비밀번호
-		</th>
-		<td>
-			<input type="password" name="password" placeholder="password">
-		</td>
-	</tr>
-	<tr>
-		<th>
-			비밀번호확인
-		</th>
-		<td>
-			<input type="password" name="password1" placeholder="password">
-		</td>
-	<tr>
-		<th>
-			이름
-		</th>
-		<td>
-			<input type="text" name="password1">
-		</td>
-	</tr>
-	<tr>
-		<th>
-			성별
-		</th>
-		<td>
-			<label><input type="radio" name="gender" value="남" checked>남</label> 
-			<label><input type="radio" name="gender" value="여">여</label> 
-		</td>
-	</tr>
-	<tr>
-		<th>
-			전화번호
-		</th>
-		<td>
-		<select id="num" name="number">
-			<option>02</option>
-			<option>010</option>
-			<option>031</option>
-			<option>062</option>
-		</select>
-			<input type="text" name="coll"></input>
-			<input type="text" name="coll"></input>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			sms수신여부
-		</th>
-		<td>
-			<label><input type="checkbox" name="sms">수신함</label>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			이메일
-		</th>
-		<td>
-			<input type="text" name="email">@
-				<select id="ema" name="email">
-					<option selected>직접입력</option>
-					<option value='naver.com'>naver.com</option>
-					<option value='najoon.com'>najoon.com</option>
-					<option value='joon.com'>joon.com</option>
-					<option value= 'joonhee.com'>joonhee.com</option>
-				</select>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			사진등록
-		</th>
-		<td>
-			<input type="file" name="files" value="파일선택">
-		</td>
-	</tr>
-	<tr>
-		<th colspan="2">
+	<form action='' autocomplete="off" method='post'>
+		<table>
+			<caption>
+				<h1>회원가입정보</h1>
+			</caption>
+			<tr>
+				<th>아이디</th>
+				<td><input type="text" name="id" placeholder="ID" autofocus></td>
+			</tr>
+			<tr>
+				<th>비밀번호</th>
+				<td><input type="password" name="password"
+					placeholder="password"></td>
+			</tr>
+			<tr>
+				<th>비밀번호확인</th>
+				<td><input type="password" name="password1"
+					placeholder="password"></td>
+			<tr>
+				<th>이름</th>
+				<td><input type="text" name="password1"></td>
+			</tr>
+			<tr>
+				<th>성별</th>
+				<td><label><input type="radio" name="gender" value="남"
+						checked>남</label> 
+						<label><input type="radio" name="gender"
+						value="여">여</label></td>
+			</tr>
+			<tr>
+				<th>전화번호</th>
+				<td><select id="num" name="number">
+						<option>02</option>
+						<option>010</option>
+						<option>031</option>
+						<option>062</option>
+				</select> <input type="text" name="coll"></input> <input type="text"
+					name="coll"></input></td>
+			</tr>
+			<tr>
+				<th>sms수신여부</th>
+				<td><label><input type="checkbox" name="sms">수신함</label>
+				</td>
+			</tr>
+			<tr>
+				<th>이메일</th>
+				<td><input type="text" name="email">@ <select id="ema"
+					name="email">
+						<option selected>직접입력</option>
+						<option value='naver.com'>naver.com</option>
+						<option value='najoon.com'>najoon.com</option>
+						<option value='joon.com'>joon.com</option>
+						<option value='joonhee.com'>joonhee.com</option>
+				</select></td>
+			</tr>
+			<tr>
+				<th>사진등록</th>
+				<td><input type="file" style="display:none" name="files" value="파일선택">
+					<img src="./image/images.jpg"
+							width="80px"; height="15px";
+							style = "border: 1px solid">
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
 				<input type='submit' value='회원가입'>
-		</th>
-	</tr>
-	</table>
-</form>
+				<input type='reset' value='초기화'>
+				</th>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>

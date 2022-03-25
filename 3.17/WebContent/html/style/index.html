@@ -5,69 +5,61 @@
 <title>스타일 실습</title>
 <link rel="stylesheet" href="../css/ex04css.css">
 <style>
-table {width:1024px}
-tr { height: 46px;}
-td {text-align:center; }
+table {
+	width: 1024px
+}
+
+tr {
+	height: 46px;
+}
+
+td {
+	text-align: center;
+}
 </style>
 </head>
 <body>
-<h2>스타일 지정 실습</h2>
-<ul >
-<li><a href='sel.html'>선택자실습</li>
-<li><a href='text.html'>텍스트관련스타일</li>
-<li class="home"><a href="../index.html">홈으로</a></li>
-<li><a href='./box.html'>박스모델</a></li>
-</ul>
-<table>
-<tr>
-<th>
-인라인 스타일
-</th>
-<td>
-태그에 직접 스타일 지정하는 형태
-</td>
-<td>
-<태그 style="속성명1:값; 속성명2:값;'">
-</td>
-</tr>
-<tr>
-<th>
-내부스타일
-</th>
-<td>
-head태그&nbsp;&nbsp;&nbsp; 안에 style태그를 선언하고,<br>
-style태그 내부에 스타일을 지정하는 형태
-</td>
-<style>태그선택 {속성명1:값; 속성명:값;}</style>
-<td>
-<태그 style="속성명1:값; 속성명2:값;'">
-</td>
-</tr>
-<tr>
-<th>
-외부 스타일
-</th>
-<td>
-외부파일에 스타일을 지정하고<br>
- head태그 안에 외부파일을 연결하는 링크를 선언한다.
-</td>
-<td>
-&lt; link rel= "stylesheet" href='스타일파일의 경로'&gt;
-</td>
-</tr>
-</table>
+	<h2>스타일 지정 실습</h2>
+	<ul>
+		<li><a href='sel.html'>선택자실습</li>
+		<li><a href='text.html'>텍스트관련스타일</li>
+		<li class="home"><a href="../index.html">홈으로</a></li>
+		<li><a href='./box.html'>박스모델</a></li>
+	</ul>
+	<table>
+		<tr>
+			<th>인라인 스타일</th>
+			<td>태그에 직접 스타일 지정하는 형태</td>
+			<td><태그 style="속성명1:값; 속성명2:값;'"></td>
+		</tr>
+		<tr>
+			<th>내부스타일</th>
+			<td>head태그&nbsp;&nbsp;&nbsp; 안에 style태그를 선언하고,<br> style태그
+				내부에 스타일을 지정하는 형태
+			</td>
+			<style>
+태그선택 {
+	속성명1: 값;
+	속성명: 값;
+}
+</style>
+			<td><태그 style="속성명1:값; 속성명2:값;'"></td>
+		</tr>
+		<tr>
+			<th>외부 스타일</th>
+			<td>외부파일에 스타일을 지정하고<br> head태그 안에 외부파일을 연결하는 링크를 선언한다.
+			</td>
+			<td>&lt; link rel= "stylesheet" href='스타일파일의 경로'&gt;</td>
+		</tr>
+	</table>
 
-<table>
-<tr>
-<th>
-text-align
-</th>
-<td>
-태그의 위치를 지정하는 스타일
-</td>
-</tr>
+	<table>
+		<tr>
+			<th>text-align</th>
+			<td>태그의 위치를 지정하는 스타일</td>
+		</tr>
 
-</table>
+	</table>
 
 </body>
 </html>
