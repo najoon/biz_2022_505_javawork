@@ -17,7 +17,7 @@ public class Var_06 {
 	intNum2 = 3;
 	intSum = intNum1 + intNum2;
 	intDeffrence = intNum1 - intNum2;
-	intProduct = intNum1 * intNum2;
+	intProduct = intNum1 * intNum2;	
 	intDivide = intNum1 / intNum2;
 	intMod = intNum1 % intNum2;
 	
