@@ -6,7 +6,7 @@ package com.callor.var;
 public class Var_01 {
 	
 	/*
-	 * main ()method(메소드, 메서드)
+	 * main()method(메소드, 메서드)
 	 * 표기 : main()
 	 * main() 는 public static void 키워드와 한 그룹으로
 	 * 	사용되면 마치 키워드 처럼 작동되다
@@ -35,8 +35,8 @@ public class Var_01 {
 		System.out.println();
 		
 		/*
-		 * 단어() 형태의 다어를 method라고 한다
-		 *  function 함수 하고 한다.
+		 * 단어() 형태의 단어를 method라고 한다
+		 *  function 함수 라고 한다.
 		 *  method 는 함수에 포함되는 개념이다
 		 *   method 는 단독으로 사용하지 않고
 		 *   다른 키워드와 조합으로 사용되는 경우가 많다
@@ -48,7 +48,7 @@ public class Var_01 {
 		 * 			키워드1.키워드2.키워드3 처럼 Dot(.) 으로 키워드를 구분하여
 		 * 하나의 명령문(statement)를 구현 (명령문을 문법에 맞게 완성) 한다.
 		 * 
-		 * 빈칸으로 조합된 키둬드는 사용용도에 따라 많은 경우의 수가 있다
+		 * 빈칸으로 조합된 키워드는 사용용도에 따라 많은 경우의 수가 있다
 		 * public static void main()
 		 * public void main()
 		 * public int main()
@@ -59,7 +59,7 @@ public class Var_01 {
 		 * 
 		 */
 		// method는 키워드() 형태로 사용을 하며
-		//다른 키워드와 조합으로 명령문을 완성한다
+		// 다른 키워드와 조합으로 명령문을 완성한다
 		//() 안에 어떤 값을 첨가하는데
 		// 이것을 아규먼트(arguments) 라고 한다
 		// method 에 따라 args 가 있거나 없거나 상관 없이 
