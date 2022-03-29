@@ -26,7 +26,7 @@ public class Var_03 {
 			// intNum1 : 1 ~ 1000 범위의 정수가 저장
 			int intNum1 = (int) doNum1;
 			
-			double doNum1 = Math.random()* 1000+1;
+			double doNum3 = Math.random()* 1000+1;
 			int intNum2 = (int) doNum1;
 			
 			int intSum = intNum1 + intNum2;
