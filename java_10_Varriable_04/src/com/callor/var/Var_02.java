@@ -17,7 +17,7 @@ public class Var_02 {
 		 * add() : add method 라고 읽는다
 		 * add() 를 실행하여(run 명령을 수행) 하여 그 결과를 intNum2 에 저장해 달라 
 		 */
-		intNum2 = add();
+		intNum2 = add(); 
 	} // end main()
 /*
  * add() 를 선언하기
