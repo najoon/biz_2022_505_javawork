@@ -1,7 +1,7 @@
 # 자바 프로젝트
 ## 2022-03-18 프로젝트 시작
 
-### [변수 선언]
+### :sunglasses: [변수 선언]
 (https://github.com/najoon/biz_2022_505_javawork/tree/master/java_10_Varrlable/src/com/cllor/var)
 * 2022-03-23
 * int type 변수 선언하기
