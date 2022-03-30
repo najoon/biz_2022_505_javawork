@@ -3,6 +3,8 @@ package com.callor.var;
 public class Var_07 {
 	public static void main(String[] args) {
 		int intNum = (int) (Math.random() * 1000) + 10;
+		
+		System.out.println(intNum);
 		int intANS = 33;
 		/*
 		 * Logic Algebra(비교연산), boolean 연산
@@ -13,7 +15,7 @@ public class Var_07 {
 		System.out.println(intNum > intANS);
 		System.out.println(intNum <= 99);
 		
-		System.out.println((intNum % 2) == 0);// boolean 연산
+		System.out.println((intNum % 2) == 0);// boolean 연산, == : 비교연산자
 	}
 
 }
