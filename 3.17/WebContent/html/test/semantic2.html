@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 <style type="text/css">
 .container {
-	width: 1040px;
+	width: 1400px;
 	height: 900px;
 }
 
@@ -14,8 +14,8 @@ ul {
 }
 
 .page {
-	width: 1440px;
-	margin: 0 auto;
+	wasdidth: 1440px;
+	masdargin: 0 auto;
 }
 
 header {
@@ -40,7 +40,7 @@ header ul {
 }
 
 header ul>li {
-	font-size: 20px;
+	font-size: 25px;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -54,13 +54,16 @@ table {
 
 .clo {
 	background-color: #ccc;
+	border-right-color: #bbb;
 }
 
 tr, td, th {
 	border: 1px solid;
-	border-color: #ccc; border-top : none;
+	border-color: #ccc;
+	border-top: none;
 	border-left: none;
 	border-top: none;
+	height: 40px;
 }
 
 .cn {
@@ -68,8 +71,69 @@ tr, td, th {
 }
 
 p {
-	margin : 32px 0;	
+	margin: 32px 0;
 }
+
+header li {
+	font-weight: bold;
+	color: #8fa1a1;
+}
+
+footer {
+	font-size: 13px;
+	padding: 20px 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+secrion>p {
+	text-align: center;
+}
+
+article ul {
+	height: 50px;
+}
+
+article ul li {
+	float: left;
+	border: 1px soild #fff;
+}
+
+article ul li {
+	display: inline-block;
+	border: 1px solid #ddd;
+	height: 50px;
+	line-height: 50px;
+	width: 50%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+article ul li.on {
+	border: 2px solid #666;
+	border-bottom: 2px solid #fff
+}
+
+table#ncs tfoot tr {
+	border-bottom: 1px soild #ccc;
+}
+
+table#ncs tfoot th {
+	background-color: #eee;
+}
+
+table#ncs tr>* {
+	border-right: none;
+	
+}
+table#ncs td {
+	text-align: left;
+}
+table#ncs tr td:not(:first-child) {text-align: center;}
+table#ncs tr td:first-child {text-indent: 20px;}
+/* 제외의 가상클래스 :not() */
 </style>
 </head>
 <body>
@@ -86,7 +150,17 @@ p {
 			</nav>
 		</header>
 		<hr>
+		<section>
+			<h1>NCS 분류체계</h1>
+			<article>
+				<ul>
+					<li class='on'>NCS소개</li>
+					<li>분류체계</li>
+				</ul>
+			</article>
+		</section>
 		<main>
+
 			<h2>NCS소개</h2>
 
 			<h4>국가직무능력표준(NCS)란</h4>
@@ -101,12 +175,12 @@ p {
 				개발의 전체적인 로드맵을 제시<br> 한국고용직업분류(KECO : Korean Employment
 				Classification of Occupations) 를 중심으로, 한국표준직업분류, 한국표준산업분류 등을 참고하여
 				분류하였으며,<br> ‘대분류(24) → 중분류(81) → 소분류(261) → 세분류(1032)개’의 순으로 구성
-			
+				분류
 			<p>
-			<h4>세부 분류기준</h4>
+			<h2>세 부 분류기준</h2>
 			<table>
 				<tr>
-					<th class="clo">분류</th>
+					<th class="clo"></th>
 					<th class="clo">분류기준</th>
 				</tr>
 				<tr>
@@ -131,7 +205,57 @@ p {
 					<td>소분류 내에서 직능유형이 유사한 분야<br> 한국고용직업분류의 직업 중 대표 직무
 					</td>
 				</tr>
+
 			</table>
+			<br>
+			<h2>NCS 분류체계</h2>
+			<article>
+				<table id="ncs">
+					<colgroup>
+						<col width='250'>
+						<col width='250'>
+						<col width='250'>
+						<col width='250'>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>대분류</th>
+							<th>중분류</th>
+							<th>소분류</th>
+							<th>세분류</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+					<tfoot>
+				</table>
+			</article>
+
+			<footer>
+				<p>HRD-Net은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 상품(훈련), 상품(훈련)정보, 거래에 관한
+					의무과 책임은 판매자(훈련기관)에게 있습니다. (27740) 충청북도 음성군 맹동면 태정로 6 (두성리, 한국고용정보원)
+					HRD-Net 시스템관련문의 : 1577-7114(유료), 제도/자격문의 : 고용노동부1350(유료) Copyright
+					ⓒ 2016. Human Resources Development Service</p>
+				Of Korea. All Rights Reserved.
+			</footer>
 		</main>
 	</div>
 </body>
