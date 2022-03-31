@@ -3,24 +3,54 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+<style type="text/css">
+input[type=text], input[type=password] {
+	height: 25px;
+}
+
+input[type=checkbox] {
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+}
+/* input[type=radio]{ margin:15px; }
+input[type=radio]{ margin-right:0; } */
+input[type=radio] {
+	margin: 15px 0 15px 15px;
+}
+
+input:enabled {
+	background-color: red;
+}
+</style>
 </head>
 <body>
+	<!-- 
+	동작이나 상태와 관련된 가상클래스
+	선택자: enabled 활성화된 선택자(입력 또는 선택이 가능한 )
+	선택자: disabled 비활성화된 선택자(입력 또는 선택이 불가능한 )
+	선택자: checked 체크박스나 라디오버튼에서 체크된 선택자
+	선택자:	focus  커서를 갖는 선택자
+	선택자: hover 마우스를 올렸을때 선택된 선택자
+	선택자: active 클릭했을때 선택된 선택자
+ -->
 	<h3>입력양식 선택자</h3>
 	<ul>
 		<li>성명:<input type='text' name='name' value='홍길동'></li>
 		<li>아이디:<input type='text' name='id'></li>
 		<li>비밀번호:<input type='password' name='password'></li>
-		<li>성별:<input type='radio' name='gender' value='남' id='male'>
-			<input type='radio' name='gender' value='여' id='female'><label
-			for='female'>여</label></li>
-		<li>취미:<input type="checkbox" name='hoddy' value="웨이트">
-		</li>
-		<li>취미:<input type="checkbox" name='hoddy' value="축구">
-		</li>
-		<li>취미:<input type="checkbox" name='hoddy' value="게임">
-		</li>
-		<li>취미:<input type="checkbox" name='hoddy' value="공부">
-		</li>
+		<li>성별:<input type='radio' name='gender' checked value='남'
+			id='male'> <label for='male'>남</label></li>
+		<li><input type='radio' name='gender' value='여' id='female'>
+			<label for='female'>여</label></li>
+		<li>취미:<input type="checkbox" name='hobby' checked id='hobby1'
+			value="웨이트"> <label for='hobby1'>웨이트</label></li>
+		<li>취미:<input type="checkbox" name='hobby' id='hobby2' value="축구">
+			<label for='hobby2'>축구</label></li>
+		<li>취미:<input type="checkbox" name='hobby' id='hobby3' value="게임">
+			<label for='hobby3'>게임</label></li>
+		<li>취미:<input type="checkbox" name='hobby' id='hobby4' value="공부">
+			<label for='hobby4'>공부</label></li>
 	</ul>
 </body>
 </html>
