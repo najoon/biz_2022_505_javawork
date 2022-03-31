@@ -22,6 +22,27 @@ input[type=radio] {
 input:enabled {
 	background-color: red;
 }
+
+input:disabled {
+	color: red;
+	font-weight: bold;
+}
+
+input:focus {
+	background-color: gray;
+}
+
+input:checked+label {
+	color: green;
+	font-weight: bold;
+}
+/* radio와 checkbox 각각 checked 를 지정하려면 */
+input[type=radio]:checked + label{
+color: gray; font-weight: bold;}
+input[type=checkbox]:checked + label{
+color: orange; font-weight: bold;}
+ul li:hover {background-color: aqua;}
+ul li:active{background-color: green;}
 </style>
 </head>
 <body>
@@ -32,11 +53,11 @@ input:enabled {
 	선택자: checked 체크박스나 라디오버튼에서 체크된 선택자
 	선택자:	focus  커서를 갖는 선택자
 	선택자: hover 마우스를 올렸을때 선택된 선택자
-	선택자: active 클릭했을때 선택된 선택자
+	선택자: active 클릭하고있는 동안 선택된 선택자
  -->
 	<h3>입력양식 선택자</h3>
 	<ul>
-		<li>성명:<input type='text' name='name' value='홍길동'></li>
+		<li>성명:<input type='text' hover name='name' value='홍길동'></li>
 		<li>아이디:<input type='text' name='id'></li>
 		<li>비밀번호:<input type='password' name='password'></li>
 		<li>성별:<input type='radio' name='gender' checked value='남'

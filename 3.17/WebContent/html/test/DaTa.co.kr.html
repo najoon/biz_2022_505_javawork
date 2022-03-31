@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+header nav {
+	background-color: #0670b9;
+}
+
+#yellow {
+	color: yellow;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+header nav ul {
+	list-style: none;
+	color: white;
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+}
+
+header nav ul li {
+	float: left;
+	margin: 0 0 0 100px;
+}
+
+div {
+	width: 1440px;
+	height: 800px;
+	margin: 0 0 0 15%;
+}
+
+main section p {
+	border-bottom: 2px solid;
+	padding: 0px 0px 20px 0px;
+}
+
+main {
+	width: 100%;
+	height: 600px;
+}
+
+main nav {
+	width: 100%;
+	height: 100px;
+}
+
+main nav ul {
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	display: inline-block;
+	width: 100%;
+	border: 1px solid;
+	border-bottom: 1px solid;
+	border-top-color: white;
+	border-left-color: white;
+	border-right-color: white;
+	border-bottom-color: #3671c8;
+	font-size: 15px;
+	padding: 0px;
+}
+
+main nav ul li {
+	float: left;
+	border: 1px solid #ccc;
+	width: 180px;
+	height: 40px;
+	padding: 20px 0px 0px 0px;
+}
+
+#asdasd {
+	border-top-color: #3671c8;
+	border-left-color: #3671c8;
+	border-right-color: #3671c8;
+	border-bottom-color: white;
+}
+
+#table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+section tr {
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	height: 60px;
+}
+
+section th {
+	background-color: #f5f5f5;
+	border-top: 2px solid;
+}
+
+section td {
+	text-align: center;
+}
+
+span {
+	color: blue;
+}
+
+#list {
+	width: 100%;
+	float : left;
+	height: 30px;
+	margin-left: 1250px;
+}
+</style>
+</head>
+<body>
+	<div>
+		<header>
+			<nav>
+				<ul hover>
+					<li>데이터 찾기</li>
+					<li>국가데이터맵</li>
+					<li>데이터요청</li>
+					<li>데이터활용</li>
+					<li id="yellow">정보공유</li>
+					<li>이용안내</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<h2>개발자 네트워크</h2>
+				<p>개발자들 간의 각종 문제해결 방안, 개발 노하우, 데이터 가공 노하우 등을 자유롭게 참여하여 의견을 나눌 수
+					있는 공간입니다.</p>
+			</section>
+			<nav>
+				<ul>
+					<li id="asdasd"><span>개발 노하우</span></li>
+					<li>OPEN API 활용 문의</li>
+					<li>유용한 사이트</li>
+				</ul>
+			</nav>
+			<div id="list">
+				<span class="list1">제목+내용</span> <span class="list1">제목</span> <span
+					class="list1">내용</span>
+			</div>
+			<section>
+				<table id="table">
+					<colgroup>
+						<col style="width: 100px">
+						<col>
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+						<col style="width: 100px">
+					</colgroup>
+					<tr>
+						<th>No.</th>
+						<th>제목</th>
+						<th>등록자</th>
+						<th>조회수</th>
+						<th>좋아요</th>
+						<th>등록일</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>ERR_CONNECTION_TIMED_OUT 오류 python에서 requests를 반복 요청할 때
+							생기는 문제 해결을 도움 받고 싶습니다.</td>
+						<td>조규*</td>
+						<td>94</td>
+						<td>0</td>
+						<td>2022-03-05</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>C#) 400오류 : 서울올림픽기념국민체육진흥공단_체육시설정보 서비스</td>
+						<td>노준*</td>
+						<td>150</td>
+						<td>0</td>
+						<td>2022-01-19</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>NO OPENAPI SERVICE ERROR가 나네요...</td>
+						<td>강정*</td>
+						<td>696</td>
+						<td>0</td>
+						<td>2021-11-06</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>ERVICE KEY IS NOT REGISTERED ERROR.</td>
+						<td>이정*</td>
+						<td>818</td>
+						<td>3</td>
+						<td>2021-10-15</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>한국소비자원 생필품 및 서비스 가격 정보 api 인증키 에러</td>
+						<td>심현*</td>
+						<td>237</td>
+						<td>1</td>
+						<td>2021-10-07</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>기상청 API로 날씨 앱 구현 시, 클라이언트에서 직접 호출 하시는지 서버에서 호출 하시는지
+							궁금합니다.</td>
+						<td>박정*</td>
+						<td>541</td>
+						<td>3</td>
+						<td>2021-09-23</td>
+					</tr>
+				</table>
+			</section>
+		</main>
+
+	</div>
+</body>
+</html>
