@@ -103,15 +103,80 @@ section td {
 	text-align: center;
 }
 
-span {
-	color: blue;
+div span {
+	padding: 8px 12px;
+	height: 60px;
+}
+
+div .list1 {
+	border: 1px solid #3671c8;
+	color: #3671c8;
+}
+
+div .list2 {
+	border: 1px solid #ccc;
+	margin-left: -5px;
+}
+
+div .list3 {
+	border: 1px solid #ccc;
+	margin-left: -7px;
 }
 
 #list {
 	width: 100%;
-	float : left;
+	float: left;
 	height: 30px;
-	margin-left: 1250px;
+	margin-left: 710px;
+}
+
+div input {
+	border: 1px solid #ccc;
+	width: 378px;
+	height: 38px;
+	padding: 0px 10px;
+}
+
+div input:hover {
+	border-color: #3671c8;
+}
+
+#table_se {
+	height: 100px;
+}
+
+button {
+	width: 100px;
+	height: 40px;
+	background-color: #0670b9;
+	border: 0px;
+	outline: 0px;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+button:hover {
+	background-color: #004a8a;
+}
+
+ul {
+	list-style: none;
+}
+
+#table_se ul {
+	position: absolute;
+	top : 390px;
+	left: 1300px;
+}
+
+#table_se ul li {
+	float: right;
+	border: 1px solid #ccc;
+	border-left-color: white;
+	border-bottom-color: white;
+	border-top-color: white;
+	font-size: 14px;
 }
 </style>
 </head>
@@ -143,8 +208,17 @@ span {
 				</ul>
 			</nav>
 			<div id="list">
-				<span class="list1">제목+내용</span> <span class="list1">제목</span> <span
-					class="list1">내용</span>
+				<span class="list1">제목+내용</span> <span class="list2">제목</span> <span
+					class="list3">내용</span> <input hover type="text" value="검색어를 입력하세요">
+				<button type="button" hover>검색</button>
+			</div>
+			<div id="table_se">
+				<ul>
+					<li>&nbsp;조회 순&nbsp;</li>
+					<li>&nbsp;좋아요 많은 순&nbsp;</li>
+					<li>&nbsp;댓글 많은 순&nbsp;</li>
+					<li><strong>&nbsp;최신 순&nbsp;</strong></li>
+				</ul>
 			</div>
 			<section>
 				<table id="table">
