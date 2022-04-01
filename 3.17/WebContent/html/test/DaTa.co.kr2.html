@@ -80,7 +80,7 @@ main nav ul li {
 	border-top-color: #3671c8;
 	border-left-color: #3671c8;
 	border-right-color: #3671c8;
-	border-bottom-color: white;
+	border-bottom: none;
 }
 
 #table {
@@ -166,7 +166,7 @@ ul {
 
 #table_se ul {
 	position: absolute;
-	top : 390px;
+	top: 390px;
 	left: 1300px;
 }
 
@@ -178,7 +178,19 @@ ul {
 	border-top-color: white;
 	font-size: 14px;
 }
+
+table .hover1:hover {
+	color: #0670b9;
+}
+
+table .hover1 {
+	text-align: left;
+}
 </style>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
 </head>
 <body>
 	<div>
@@ -240,8 +252,8 @@ ul {
 					</tr>
 					<tr>
 						<td>1</td>
-						<td>ERR_CONNECTION_TIMED_OUT 오류 python에서 requests를 반복 요청할 때
-							생기는 문제 해결을 도움 받고 싶습니다.</td>
+						<td class="hover1">ERR_CONNECTION_TIMED_OUT 오류 python에서
+							requests를 반복 요청할 때 생기는 문제 해결을 도움 받고 싶습니다.</td>
 						<td>조규*</td>
 						<td>94</td>
 						<td>0</td>
@@ -249,15 +261,16 @@ ul {
 					</tr>
 					<tr>
 						<td>2</td>
-						<td>C#) 400오류 : 서울올림픽기념국민체육진흥공단_체육시설정보 서비스</td>
+						<td class="hover1">C#) 400오류 : 서울올림픽기념국민체육진흥공단_체육시설정보 서비스</td>
 						<td>노준*</td>
 						<td>150</td>
-						<td>0</td>
+						<td>0</i>
+						</td>
 						<td>2022-01-19</td>
 					</tr>
 					<tr>
 						<td>3</td>
-						<td>NO OPENAPI SERVICE ERROR가 나네요...</td>
+						<td class="hover1">NO OPENAPI SERVICE ERROR가 나네요...</td>
 						<td>강정*</td>
 						<td>696</td>
 						<td>0</td>
@@ -265,7 +278,7 @@ ul {
 					</tr>
 					<tr>
 						<td>4</td>
-						<td>ERVICE KEY IS NOT REGISTERED ERROR.</td>
+						<td class="hover1">ERVICE KEY IS NOT REGISTERED ERROR.</td>
 						<td>이정*</td>
 						<td>818</td>
 						<td>3</td>
@@ -273,7 +286,7 @@ ul {
 					</tr>
 					<tr>
 						<td>5</td>
-						<td>한국소비자원 생필품 및 서비스 가격 정보 api 인증키 에러</td>
+						<td class="hover1">한국소비자원 생필품 및 서비스 가격 정보 api 인증키 에러</td>
 						<td>심현*</td>
 						<td>237</td>
 						<td>1</td>
@@ -281,8 +294,8 @@ ul {
 					</tr>
 					<tr>
 						<td>6</td>
-						<td>기상청 API로 날씨 앱 구현 시, 클라이언트에서 직접 호출 하시는지 서버에서 호출 하시는지
-							궁금합니다.</td>
+						<td class="hover1">기상청 API로 날씨 앱 구현 시, 클라이언트에서 직접 호출 하시는지
+							서버에서 호출 하시는지 궁금합니다.</td>
 						<td>박정*</td>
 						<td>541</td>
 						<td>3</td>
@@ -291,7 +304,6 @@ ul {
 				</table>
 			</section>
 		</main>
-
 	</div>
 </body>
 </html>
