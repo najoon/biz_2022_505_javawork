@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" href = "../../test/css/imgs.css">
+<style>
+#transform .slide{
+animation-name :animation-slide;
+  animation-duration: 4s;
+  animation-delay: -2s;
+}
+@keyframes animation-slide {
+  0%   {left:0px;}
+  25%  {left:-320px;}
+  50%  {left:-640px;}
+  75%  {left:-960px;}
+  100% {left:-1280px;}
+}
+@keyframes animation-step{
+form{left:0px;}to{left:-1280px;}}
+#transform2 .slide {
+	animation: animation_step 16s steps(4,start) 4s infinite alternate;
+}
+</style>
+
+</head>
+<body>
+<div id="transform">
+		<div class="slide-wrap">
+			<div class="slide">
+				<ul>
+					<li><img src="./cat.jpg"></li>
+					<li><img src="./hands.jpg"></li>
+					<li><img src="./machang.jpg"></li>
+					<li><img src="./nature.jpg"></li>
+					<li><img src="./pep.jpg"></li>
+					<li><img src="./yell.jpg"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="transform2">
+		<div class="slide-wrap">
+			<div class="slide">
+				<ul>
+					<li><img src="./cat.jpg"></li>
+					<li><img src="./hands.jpg"></li>
+					<li><img src="./machang.jpg"></li>
+					<li><img src="./nature.jpg"></li>
+					<li><img src="./pep.jpg"></li>
+					<li><img src="./yell.jpg"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

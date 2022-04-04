@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+.box {width: 100px;height: 100px; position: relative;margin: 100px;}
+#box1 {background-color:  red;
+animation-name: box1;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  }
+@keyframes box1 {
+  0%   {background-color: red; left : 0; top : 0;}
+  25%  {background-color: yellow; left : 200; top : 0;}
+  50%  {background-color: blue; left : 200; top : 200;}
+  75%  {background-color: abbr; left : 0; top : 200;}
+  100% {background-color: green; left : 0; top : 0;}
+}
+#box2 {
+background-color: blue;
+animation-name : box2;
+animation-duration : 4s;
+animation-delay : 1s;
+}
+@keyframes box2 {
+	form {left:0px;} to {left:200;}
+} 
+#box3 {background-color: maroon;
+		animation-name:box2;
+		animation-duration : 2s;
+		animation-delay:1s;
+		animation-direction: alternate;
+		animation-iteration-count:2;
+		animation-timing-function : linear;
+}
+#box4 {
+	background-color: lime;
+	animation-name:box2;
+		animation-duration : 2s;
+		animation-delay:1s;
+		animation-delay:1s;
+	
+}
+</style>
+</head>
+<body>
+<div id="box1" class ="box"></div>
+<div id= "box2" class ="box"></div>
+<div id= "box3" class ="box"></div>
+<div id= "box4" class ="box"></div>
+<div id=box><img src= "./imgs/cat.jpg/"></div>
+</body>
+</html>

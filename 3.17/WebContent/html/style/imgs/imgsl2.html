@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+#transform .slide {
+	transition-property: transform;
+	transition-duration: 16s;
+	transition-delay: 2s;
+	/* transition-timing-function: linear; */
+	transition-timing-function: steps(4, start);
+}
+
+#transform .slide:hover {
+	transform: translateX(-1280px);
+}
+
+#transform2 .slide-wrap {
+	width: 980px;
+}
+#transform2 .slide{
+	transition:transform 9s steps(3,start) 2s;
+}
+#transform2 .slide:hover {
+	transform: translateX(-960px);
+}
+</style>
+<link rel="stylesheet href" href='../../test/css/imgs.css'>
+</head>
+<body>
+	<h3>이미지 이동 실습</h3>
+	<div id="transform">
+		<div class="slide-wrap">
+			<div class="slide">
+				<ul>
+					<li><img src="./cat.jpg"></li>
+					<li><img src="./hands.jpg"></li>
+					<li><img src="./machang.jpg"></li>
+					<li><img src="./nature.jpg"></li>
+					<li><img src="./pep.jpg"></li>
+					<li><img src="./yell.jpg"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="transform2">
+		<div class="slide-wrap">
+			<div class="slide">
+				<ul>
+					<li><img src="./cat.jpg"></li>
+					<li><img src="./hands.jpg"></li>
+					<li><img src="./machang.jpg"></li>
+					<li><img src="./nature.jpg"></li>
+					<li><img src="./pep.jpg"></li>
+					<li><img src="./yell.jpg"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
