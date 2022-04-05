@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#manu>li {
+	float: left;
+}
+
+#manu>li:not(:first-child) {
+	margin-left: 100px;
+}
+#manu .submenu {
+	position:absolute; width: 150px;
+	transform-origin: top; transform:scaleY(0);
+	transition : 0.3s;
+	border : 1px soild #ddd;
+	padding : 15px;
+}
+
+#menu .menu:hover + .submenu {
+transform:scaleY(1);
+}
+</style>
+</head>
+<body>
+	<ul id='manu'>
+		<li><a class ='menu'>메뉴1</a>
+			<ul class='submenu'>
+				<li><a>메뉴1 서브메뉴1</a>
+				<li><a>메뉴1 서브메뉴2</a>
+				<li><a>메뉴1 서브메뉴3</a>
+			</ul></li>
+		<li><a class ='menu'>메뉴2
+				<ul class='submenu'>
+					<li><a>메뉴2 서브메뉴1</a>
+					<li><a>메뉴2 서브메뉴2</a>
+					<li><a>메뉴2 서브메뉴3</a>
+				</ul>
+		</a></li>
+		<li><a>메뉴3</a></li>
+		<li><a class ='menu'>메뉴4
+				<ul class='submenu'>
+					<li><a>메뉴4 서브메뉴1</a>
+					<li><a>메뉴4 서브메뉴2</a>
+				</ul>
+		</a></li>
+		<li><a>메뉴5 </a></li>
+	</ul>
+</body>
+</html>
