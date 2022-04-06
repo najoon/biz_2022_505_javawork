@@ -3,14 +3,14 @@ package com.callor.var;
 public class Var_02 {
 	public static void main(String[] args) { // main() 시작
 		int intNum1 = 0; // 변수의 선언과 clear
-		/* main() {} 블럭에서 선언된 int\Num1 변수는
+		/* main() {} 블럭에서 선언된 intNum1 변수는
 		 * main() {} 블럭이 긑나는 시점에 모두 소멸된다
 		 */
 		int intNum2 = 0;
 		
 		intNum1 = 55; // 변수의 값을 할당, 대입 , 저장하기
 		/*
-		 * 이 명혈문이 실행되는 순간
+		 * 이 명령문이 실행되는 순간
 		 * 이전에 변수에 어떤 일이 있던지 상관 없이 모든 값이 clear되고
 		 * intNum1 변수에는 55만 담겨 있게 된다.
 		 * 
@@ -21,7 +21,7 @@ public class Var_02 {
 		System.out.println("55 + 33 = " + intNum1 + intNum2);
 		// 2. intNum1 에 담긴 숫자형 데이터를 문자열형 데이터로 바꿔버린다
 		// 3. intNum2 에 저장된 값을 읽어온다		
-		// 4.intNum2 에 담긴 숫자형 데이터를 문자열형 데이터로 바꿔버린다
+		// 4. intNum2 에 담긴 숫자형 데이터를 문자열형 데이터로 바꿔버린다
 		System.out.println("55 + 33 = " + "55" +"33");
 		intNum1 = 77;
 		intNum2 = 99;

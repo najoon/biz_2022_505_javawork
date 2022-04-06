@@ -1,6 +1,6 @@
 package com.callor.var;
 
-public class var_01 {
+public class Var_01 {
 	/*
 	 * 1. 변수명은 키워드 등으로 사용할수 없다
 	 * 2. 같은 변수명은 한 블럭({}) 내부에서 두번이상 선언할수 없다.

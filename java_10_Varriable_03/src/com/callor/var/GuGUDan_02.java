@@ -17,7 +17,7 @@ public class GuGUDan_02 {
 		 *   
 		 *   "\n" :println 처럼 출력후 줄바꿈하기
 		 *   "\t" : 키보드의 Tap 키를 누른 것 처럼 간격을 띄우기
-		 *   "\d" : 정수형 숫사를 표현하는 기호
+		 *   "%d" : 정수형 숫사를 표현하는 기호
 		 */
 		
 		System.out.printf("\t%d x %d = %d\n", intDan,intIndex,

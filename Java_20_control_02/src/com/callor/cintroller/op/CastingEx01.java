@@ -1,6 +1,6 @@
 package com.callor.cintroller.op;
 
-public class CasCading_01 {
+public class CastingEx01 {
 	public static void main(String[] args) {
 		//java에서 취급하는 정수 
 		short shortNum1 = 0; //2승 16승
@@ -12,7 +12,7 @@ public class CasCading_01 {
 		 * 크기가 큰 type 의 변수 값을 복사 대입하는 경우
 		 * 값을 읽을 수 있다
 		 * 하지만 억지로 대입하고자 한다면
-		 * "강제 형 변환(casCading)" 을 수행해야 한다
+		 * "강제 형 변환(casting)" 을 수행해야 한다
 		 * 강제 형 변환을 수행했은때 예측 할 수 없는 결과가 나올수 있고
 		 * 그 책임음 순전히 개발자 몫
 		 */

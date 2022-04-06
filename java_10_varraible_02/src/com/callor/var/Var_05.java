@@ -29,6 +29,7 @@ public class Var_05 {
 				+ intSum);
 		intNum1 = 101;
 		intNum2 = 202;
+		intSum = intNum1+intNum2;
 		
 		System.out.printf("%d + %d = %d\n",intNum1, intNum2, intSum);
 		System.out.printf("%d x %d = %d\n",intNum1, intNum2, intNum1 * intNum2);
