@@ -30,7 +30,7 @@ public class ServiceV2 {
 	}// end gogoDan()
 	//guguDan (변수 선언) 형식으로 method 선언하기
 	/*
-	 * method 의 괄호한에 선언된 변수를 "argument(아규먼트)" 라고 한다
+	 * method 의 괄호안에 선언된 변수를 "argument(아규먼트)" 라고 한다
 	 * argument : 매개변수,parameter
 	 * 호출하는 곳에서 값을 전달하면 전달된 값을 변수에 저장하고
 	 * 코드내에서 변수 값을 사용하여 연산을 수행한다.
