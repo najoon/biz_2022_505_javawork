@@ -7,13 +7,13 @@ public class ExecV6 {
 			intNums[i] = (int) (Math.random() * 100) + 1;
 		}
 		for (int i = 0; i < intNums.length; i++) {
-			System.out.print(intNums[i] + ",\t");
-			if ((i + 1) % 5 == 0)
-			{
-				System.out.println();
-			}
+			boolean bYes = intNums[i] % 2 == 0;
+			if (bYes) {
+				System.out.print(intNums[i] + ",\t");
 
+			}else if((i+1)%5 == 0) {
+				System.out.printf("\n");
+			}
 		}
 	}
-
 }
