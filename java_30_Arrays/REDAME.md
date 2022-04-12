@@ -1,5 +1,5 @@
 # 배열 , Array
-* 같은 type 의 변수가 다수 필요할\때 사용하는 변수type
+* 같은 type 의 변수가 다수 필요할때 사용하는 변수type
 * ```int intNum``` : 정수형 변수 ```intNum``` 선언이라고 하고
 * ```int[] intKor``` : 정수형 배열 ```intKor```선언이라고 한다.
 * ```intNum = 10``` : 정수형 변수```intNum``` 를 clear
