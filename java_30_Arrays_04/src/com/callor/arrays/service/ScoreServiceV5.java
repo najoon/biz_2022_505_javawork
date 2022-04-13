@@ -1,4 +1,7 @@
 package com.callor.arrays.service;
+
+import com.callor.arrays.utils.Line;
+
 /*
  * 	makeScore()
  * printScore()
@@ -11,28 +14,35 @@ package com.callor.arrays.service;
  */
 
 public class ScoreServiceV5 {
-int[] intKor;
-int intSum;
-	
-public void makeScore() {
-	intKor = new int[100];
-	for(int i = 0; i<intKor.length; i++) {
-		intKor[i] = (int)(Math.random()*100)+1;
+	private int[] intKor;
+	int intSum;
+
+	public void makeScore() {
+		intKor = new int[100];
+		for (int i = 0; i < intKor.length; i++) {
+			intKor[i] = (int) (Math.random() * 100) + 1;
+		}
+
 	}
-		
-	}public void printScore() {
-		for(int i= 0; i < intKor.length; i++) {
+
+	public void printScore() {
+		System.out.println("성적일람표");
+		System.out.println(Line.dLine(60));
+		for (int i = 0; i < intKor.length; i++) {
 			intSum = intKor[i];
-			System.out.printf("%d번 :  %d점 \t",i,intSum);
-			if((i + 1)%5 == 0) {
+			System.out.printf("%d번 :  %d점 \t", i, intSum);
+			if ((i + 1) % 5 == 0) {
 				System.out.println();
 			}
 		}
-		}public void SumScore() {
-			for(int i = 0;i < intKor.length; i++) {
-				intSum += intKor[i];
-				
-				
-			}System.out.println("총점계산 : "+intSum);
-}
+	}
+
+	public void SumScore() {
+	System.out.println(Line.sLine);
+		for (int i = 0; i < intKor.length; i++) {
+			intSum += intKor[i];
+
+		}
+		System.out.println("총점계산 : " + intSum);
+	}
 }
