@@ -42,7 +42,7 @@ public class ScoreServiceV1 {
 			}
 			// 학생이름을 배열에 저장할때는 if() 다음에 위치해야한다.
 			// 만약 if() 위에 코드를 위치하면, 중단되기 전에 
-			// students[index]오소에 end 문자열이 먼저 저장되기 때문에
+			// students[index]요소에 end 문자열이 먼저 저장되기 때문에
 			// 학생이름에 end 가 나타날 것이다.
 			students[index] = strName;
 			
