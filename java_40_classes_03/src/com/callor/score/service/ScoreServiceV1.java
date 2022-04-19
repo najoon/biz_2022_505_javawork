@@ -67,10 +67,29 @@ public class ScoreServiceV1 {
 		System.out.println(Line.dLine(50));
 	} public void printSum() {
 		
+		System.out.print("총점:\t");
+			int intKorSum = 0;
+			int intEngSum = 0;
+			int intMathSum = 0;
+			int intSum = 0;
+			double fAvg = 0.0;
+			
+		for(int i = 0; i < scores.length; i++) {
+			intKorSum += scores[i].getIntKor();
+			intEngSum += scores[i].getIntEng();
+			intMathSum += scores[i].getIntMath();
+			intSum += scores[i].getIntSum();
+			fAvg += scores[i].getfAvg();
+		}
+		
+		System.out.printf(
+				"%d\t %d\t %d\t %d\t %3.2f"
+				,intKorSum
+				,intEngSum
+				,intMathSum
+				,intSum
+				,fAvg);
 		
 	}
-
-
-	
 
 }

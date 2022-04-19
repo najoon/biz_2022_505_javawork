@@ -7,5 +7,10 @@ public class LinePrintV2 {
 		String sLine = "-";
 		return sLine.repeat(xoxo);
 	}
+public static String dLine(int xaxa) {
+	String dLine = "=";
+	
+return dLine.repeat(xaxa);
+}
 	}
 

@@ -7,6 +7,15 @@ public class ScoreV2VO extends Object {
 	private int intEng;
 	private int intMath;
 	private int intSum;
+	
+
+	
+	public void setIntSum(int intSum) {
+		this.intSum = intSum;
+	}
+	public void setfAvg(float fAvg) {
+		this.fAvg = fAvg;
+	}
 	private float fAvg;
 	
 	public String getStName() {

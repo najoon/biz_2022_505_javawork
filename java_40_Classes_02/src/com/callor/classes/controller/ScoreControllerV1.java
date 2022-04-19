@@ -1,10 +1,10 @@
 package com.callor.classes.controller;
 
-import com.callor.classes.sevice.ScoreSeviceV1;
+import com.callor.classes.sevice.ScoreServiceV1;
 
 public class ScoreControllerV1 {
 	public static void main(String[] args) {
-		ScoreSeviceV1 scoreSeviceV1 = new ScoreSeviceV1();
+		ScoreServiceV1 scoreSeviceV1 = new ScoreServiceV1();
 		int intResult = scoreSeviceV1.input();
 		if(intResult < 0) {
 			System.out.println("입력 도중 중단함");
