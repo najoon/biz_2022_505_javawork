@@ -9,7 +9,6 @@ public class ScoreContrlloerV1 {
 			ScoreServiceV1 scoreServiceV1 = new ScoreServiceV1(stNames);
 			scoreServiceV1.makeScore();
 			scoreServiceV1.printScore();
-			scoreServiceV1.printSum();
 		
 			
 		}
