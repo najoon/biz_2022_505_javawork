@@ -3,15 +3,14 @@ package com.callor.score.service;
 import com.callor.score.domain.ScoreV2VO;
 import com.callor.score.utils.Line;
 
-public class ScoreServiceV1 {
-
-	protected ScoreV2VO[] scores;
-
-	public ScoreServiceV1() {
+public class ScoreServiceV2 extends ScoreServiceV1 {
+	
+	
+	public ScoreServiceV2() {
 		this(10);
 	}
 
-	public ScoreServiceV1(int length) {
+	public ScoreServiceV2(int length) {
 		scores = new ScoreV2VO[length];
 
 		for (int i = 0; i < scores.length; i++) {
@@ -22,7 +21,7 @@ public class ScoreServiceV1 {
 	}
 
 	//
-	public ScoreServiceV1(String[] stNames) {
+	public ScoreServiceV2(String[] stNames) {
 
 		int length = stNames.length;
 		scores = new ScoreV2VO[length];
@@ -34,20 +33,6 @@ public class ScoreServiceV1 {
 
 	}
 
-	public void makeScore() {
-
-		for (int i = 0; i < scores.length; i++) {
-			int intKor = (int) (Math.random() * 50) + 51;
-			int intEng = (int) (Math.random() * 50) + 51;
-			int intMath = (int) (Math.random() * 50) + 51;
-
-			scores[i].setIntEng(intEng);
-			scores[i].setIntKor(intKor);
-			scores[i].setIntMath(intMath);
-
-		}
-
-	}
 
 	public void printScore() {
 		System.out.println(Line.dLine(50));
@@ -62,12 +47,12 @@ public class ScoreServiceV1 {
 		int intSum = 0;
 		double fAvg = 0.0;
 		for (int i = 0; i < scores.length; i++) {
-			System.out.print(scores[i].getStName() + "\t");
-			System.out.print(scores[i].getIntKor() + "\t");
-			System.out.print(scores[i].getIntEng() + "\t");
-			System.out.print(scores[i].getIntMath() + "\t");
-			System.out.print(scores[i].getIntSum() + "\t");
-			System.out.printf("%3.2f\n", scores[i].getfAvg());
+			System.out.printf("%-3s\t",scores[i].getStName());
+			System.out.printf("%4d\t",scores[i].getIntKor());
+			System.out.printf("%4d\t",scores[i].getIntEng());
+			System.out.printf("%4d\t",scores[i].getIntMath());
+			System.out.printf("%6d\t",scores[i].getIntSum());
+			System.out.printf("%4.2f\n", scores[i].getfAvg());
 			
 			intKorSum += scores[i].getIntKor();
 			intEngSum += scores[i].getIntEng();
@@ -75,16 +60,17 @@ public class ScoreServiceV1 {
 			intSum += scores[i].getIntSum();
 			fAvg += scores[i].getfAvg();
 			
+			
 		}
 		System.out.println(Line.dLine(50));
-		System.out.print("총점:\t");
-		System.out.printf(
-				"%d\t %d\t %d\t %d\t %3.2f"
-				,intKorSum
-				,intEngSum
-				,intMathSum
-				,intSum
-				,fAvg);
+		System.out.printf("%-3s\t","총점:\t");
+		System.out.printf("%4d\t",intKorSum);
+		System.out.printf("%4d\t",intEngSum);
+		System.out.printf("%4d\t",intMathSum);
+		System.out.printf("%6d\t",intSum);
+		System.out.printf("%4.2f\n",fAvg / scores.length);
+		
+		System.out.printf(Line.dLine(50));
 		
 	}
 		
