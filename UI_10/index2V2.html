@@ -56,8 +56,8 @@
         cursor: pointer;
         background-color: rgb(212, 221, 213);
       }
-      article table {
-        margin: 150px 30px 20px 30px;
+      section table {
+        margin: 200px 15px 20px 15px;
         list-style: none;
         color: rgb(48, 46, 46);
         border: 1px solid rgb(159, 156, 156);
@@ -76,15 +76,12 @@
       th,
       td {
         padding: 10px 70px;
+        border: 1px solid  rgb(192, 190, 190);
+      }
+      th{
+        background-color: rgb(159, 156, 156);
       }
 
-      #top {
-        background-color: rgb(230, 230, 230);
-      }
-
-      tr:not(:first-child) {
-        border-bottom: 1px solid rgb(208, 199, 199);
-      }
       button {
         margin: 20px;
         width: 14vw;
@@ -100,6 +97,14 @@
         border-radius: 5px;
         float: right;
       }
+      button {
+ 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  cursor: pointer;
+
+  transition: 0.5s;
+}
     </style>
   </head>
   <body>
@@ -114,36 +119,28 @@
         </ul>
       </nav>
     </header>
-    <article>
+    <section>
       <table>
-        <tr id="top">
+        <tr>
           <th>학번</th>
-          <th>이름</th>
+          <td>20210001</td>
           <th>전공</th>
+          <td>컴퓨터공학</td>
+        </tr>
+        <tr>
+          <th>이름</th>
+          <td>홍길동</td>
           <th>학년</th>
+          <td>2</td>
+        </tr>
+        <tr>
           <th>주소</th>
-          <th>전화번호</th>
-        </tr>
-        <tr>
-          <th>20210001</th>
-          <th>홍길동</th>
-          <th>컴퓨터공학</th>
-          <th>2</th>
-          <th>서울시동대문구</th>
-          <th>02-222-1234</th>
-        </tr>
-        <tr>
-          <th>20210002</th>
-          <th>성춘향</th>
-          <th>전자공학</th>
-          <th>3</th>
-          <th>전라북도익산시</th>
-          <th>063-111-1234</th>
+          <td colspan="3">서울특별시</td>
         </tr>
       </table>
-    </article>
+    </section>
     <div>
-      <button type="button" id="but">학생정보 추가</button>
+      <button type="button" id="but">학생정보 수정</button>
     </div>
   </body>
 </html>
