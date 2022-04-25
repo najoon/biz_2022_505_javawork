@@ -8,7 +8,7 @@ public class varEX3 {
 	
 	public static void main(String[] args) {
 		
-		//pribitive type 변수 선언명령문
+		//primitive type 변수 선언명령문
 		int num1;
 		float num2;
 		double num3;
