@@ -13,7 +13,6 @@ private static Connection conn;
 		String username = "user2";
 		String password = "12341234";
 		
-		
 		try {
 			conn = DriverManager.getConnection(url,username,password);
 			System.out.println("db ok~");
