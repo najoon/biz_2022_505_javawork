@@ -12,9 +12,8 @@ public class Exec02 {
 		}
 		for (int i = 0; i < num.length; i++) {
 			if (num[i] % 2 == 0) {
+				num1++;
 				intSum += num[i];
-				num[i] = 1;
-				num1 += num[i];
 			}
 
 		}
